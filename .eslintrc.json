@@ -1,0 +1,36 @@
+{
+  "extends": ["next/core-web-vitals", "prettier"],
+  "ignorePatterns": [
+    "**/*.md",
+    "**/*.json",
+    "**/*.yml",
+    "**/*.webmanifest",
+    "**/node_modules",
+    "**/src/api/*.ts",
+    "**/build"
+],
+"rules": {
+    "prettier/prettier": [
+        "error",
+        {
+    "printWidth": 100,
+    "useTabs": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "parser": "typescript",
+    "endOfLine": "auto"
+
+        }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "camelcase": "error",
+    "spaced-comment": "error",
+    "indent": ["warn", "tab"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "no-duplicate-imports": "error"
+}
+}
